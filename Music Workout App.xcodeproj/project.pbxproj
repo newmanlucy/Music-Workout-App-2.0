@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D75E67920D8B2460006A2B9 /* WorkoutSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75E67820D8B2460006A2B9 /* WorkoutSettingsViewController.swift */; };
 		AAE76F2920CF549A0027FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F2820CF549A0027FD21 /* AppDelegate.swift */; };
 		AAE76F2B20CF549A0027FD21 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F2A20CF549A0027FD21 /* RootViewController.swift */; };
 		AAE76F2D20CF549A0027FD21 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F2C20CF549A0027FD21 /* DataViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D75E67820D8B2460006A2B9 /* WorkoutSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSettingsViewController.swift; sourceTree = "<group>"; };
 		AAE76F2520CF549A0027FD21 /* Music Workout App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Workout App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE76F2820CF549A0027FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE76F2A20CF549A0027FD21 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				AAE76F6120CF56D30027FD21 /* exercise.storyboard */,
 				AAE76F6F20CF5E880027FD21 /* ChooseMusicViewController.swift */,
+				5D75E67820D8B2460006A2B9 /* WorkoutSettingsViewController.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				AAE76F7220CF5EE40027FD21 /* MakeMusicViewController.swift in Sources */,
 				AAE76F6C20CF59960027FD21 /* SignupViewController.swift in Sources */,
 				AAE76F2B20CF549A0027FD21 /* RootViewController.swift in Sources */,
+				5D75E67920D8B2460006A2B9 /* WorkoutSettingsViewController.swift in Sources */,
 				AAE76F2F20CF549A0027FD21 /* ModelController.swift in Sources */,
 				AAE76F7020CF5E880027FD21 /* ChooseMusicViewController.swift in Sources */,
 				AAE76F2D20CF549A0027FD21 /* DataViewController.swift in Sources */,

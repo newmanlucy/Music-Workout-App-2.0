@@ -25,12 +25,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLf-h4-RZo">
-                                <rect key="frame" x="305" y="617" width="54" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIY-fi-RcN">
+                                <rect key="frame" x="313" y="627" width="46" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="To Main"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="576-hN-dVB" kind="show" id="AWH-3H-xmc"/>
+                                    <segue destination="0o2-rm-sd0" kind="show" id="hDj-pj-a9W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,7 +40,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smt-JA-0Qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-137" y="109"/>
+            <point key="canvasLocation" x="-359.19999999999999" y="90.404797601199405"/>
+        </scene>
+        <!--Workout Settings View Controller-->
+        <scene sceneID="LNe-sC-q8O">
+            <objects>
+                <viewController id="0o2-rm-sd0" customClass="WorkoutSettingsViewController" customModule="Music_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wNN-dV-Zcr" customClass="Wor">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OG-Tj-sAO">
+                                <rect key="frame" x="313" y="623" width="54" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="To Main"/>
+                                <connections>
+                                    <segue destination="576-hN-dVB" kind="show" id="X0e-eW-aha"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ecv-eE-Orq">
+                                <rect key="frame" x="54" y="132" width="265" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="durationslider:" destination="0o2-rm-sd0" eventType="valueChanged" id="4tT-Zi-u1D"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-gl-rpz">
+                                <rect key="frame" x="154" y="46" width="66" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="P3e-Af-Xec"/>
+                    </view>
+                    <connections>
+                        <outlet property="durationlabel" destination="Xfb-gl-rpz" id="sRQ-15-4Mc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoE-zV-gtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.80000000000001" y="89.505247376311857"/>
         </scene>
         <!--Main-->
         <scene sceneID="1io-xh-VI0">
@@ -48,7 +90,7 @@
                 <viewControllerPlaceholder storyboardName="Main" id="576-hN-dVB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mC3-MC-axC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="363"/>
+            <point key="canvasLocation" x="1058" y="102"/>
         </scene>
     </scenes>
 </document>
