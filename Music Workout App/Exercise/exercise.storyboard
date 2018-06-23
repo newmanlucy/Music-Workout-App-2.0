@@ -58,15 +58,16 @@
                                     <segue destination="576-hN-dVB" kind="show" id="X0e-eW-aha"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ecv-eE-Orq">
-                                <rect key="frame" x="54" y="132" width="265" height="30"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="10" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ecv-eE-Orq">
+                                <rect key="frame" x="55" y="125" width="265" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.31919710457939909" blue="0.45990235275539615" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="durationslider:" destination="0o2-rm-sd0" eventType="valueChanged" id="4tT-Zi-u1D"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-gl-rpz">
-                                <rect key="frame" x="154" y="46" width="66" height="28"/>
+                                <rect key="frame" x="105" y="31" width="194" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -78,6 +79,7 @@
                     </view>
                     <connections>
                         <outlet property="durationlabel" destination="Xfb-gl-rpz" id="sRQ-15-4Mc"/>
+                        <outlet property="durationsliderobject" destination="Ecv-eE-Orq" id="gHx-0w-GVa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoE-zV-gtW" userLabel="First Responder" sceneMemberID="firstResponder"/>

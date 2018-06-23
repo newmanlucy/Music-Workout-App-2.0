@@ -11,11 +11,13 @@ import UIKit
 class WorkoutSettingsViewController: UIViewController {
 
     @IBAction func durationslider(_ sender: UISlider) {
-        durationlabel.text = String(sender.value)
+        durationlabel.text = self.getdurationslidertext(slider: sender)
     }
+    @IBOutlet weak var durationsliderobject: UISlider!
     @IBOutlet weak var durationlabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        durationlabel.text = self.getdurationslidertext(slider: self.durationsliderobject)
 
         // Do any additional setup after loading the view.
     }
@@ -25,6 +27,9 @@ class WorkoutSettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func getdurationslidertext(slider: UISlider) -> String {
+        return "duration: " + String(Int(durationsliderobject.value)) + "min"
+    }
 
     /*
     // MARK: - Navigation
