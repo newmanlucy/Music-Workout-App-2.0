@@ -59,15 +59,33 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="10" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ecv-eE-Orq">
-                                <rect key="frame" x="55" y="125" width="265" height="30"/>
+                                <rect key="frame" x="70" y="119" width="265" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.31919710457939909" blue="0.45990235275539615" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="durationslider:" destination="0o2-rm-sd0" eventType="valueChanged" id="4tT-Zi-u1D"/>
                                 </connections>
                             </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="50" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-u3-X5m">
+                                <rect key="frame" x="54" y="445" width="281" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="intensityslider:" destination="0o2-rm-sd0" eventType="valueChanged" id="CPI-bc-64F"/>
+                                </connections>
+                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-gl-rpz">
-                                <rect key="frame" x="105" y="31" width="194" height="55"/>
+                                <rect key="frame" x="123" y="29" width="201" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bv7-aQ-ht4">
+                                <rect key="frame" x="181" y="389" width="42" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4w-nX-j4T">
+                                <rect key="frame" x="123" y="338" width="201" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -78,8 +96,10 @@
                         <viewLayoutGuide key="safeArea" id="P3e-Af-Xec"/>
                     </view>
                     <connections>
-                        <outlet property="durationlabel" destination="Xfb-gl-rpz" id="sRQ-15-4Mc"/>
+                        <outlet property="durationlabel" destination="Xfb-gl-rpz" id="aOj-We-boI"/>
                         <outlet property="durationsliderobject" destination="Ecv-eE-Orq" id="gHx-0w-GVa"/>
+                        <outlet property="intensitylabel" destination="w4w-nX-j4T" id="X48-VT-TZR"/>
+                        <outlet property="intensitysliderobject" destination="CYg-u3-X5m" id="gV5-RS-J3K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoE-zV-gtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
