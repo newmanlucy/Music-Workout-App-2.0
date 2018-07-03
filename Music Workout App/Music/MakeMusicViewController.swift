@@ -11,6 +11,8 @@ import AVFoundation
 
 class MakeMusicViewController: UIViewController {
    
+    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var PauseOrPlayButton: UIButton!
     
     @IBOutlet weak var RateLabel: UILabel!
@@ -32,22 +34,53 @@ class MakeMusicViewController: UIViewController {
     
     var player = AVAudioPlayer()
     var isPlaying = false
-    
+    var viewModel = ViewModel()
+    var song: String
+
     override func viewDidLoad() {
-        let path = Bundle.main.path(forResource: "franz-liszt-liebestraum-3", ofType: "mp3")
+        let name = "Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard"
+        self.setSong(name: name)
+        player.prepareToPlay()
+        player.enableRate = true
+        
+        self.loadSongs()
+        
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    func setSong(name: String) {
+        let path = Bundle.main.path(forResource: name, ofType: "mp3")
+        do {
+            try self.player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+        } catch {
+            print("error: file not loaded")
+        }
+    }
+    
+    func loadSongs() {
+        let songs = [["name": "Feeling Happy Summer", "fullpath": "Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard"], ["name": "Song 2", "fullname": "song 22222"]]
+        let vmitems = songs.map { ViewModelItem(item: Model(title: $0["name"] as! String, data: $0)) }
+        self.viewModel.setItems(items: vmitems)
+        
+        self.tableView?.register(CustomCell.nib, forCellReuseIdentifier: CustomCell.identifier)
+        self.tableView?.dataSource = self.viewModel
+        self.tableView?.delegate = self.viewModel
+        self.tableView?.estimatedRowHeight = 100
+        self.tableView?.rowHeight = UITableViewAutomaticDimension
+        self.tableView?.separatorStyle = .none
+    }
+    
+    func playSong() {
+        let choice = viewModel.selectedItems[0].data["fullname"] as! String
+        let path = Bundle.main.path(forResource: choice, ofType: "mp3")
         do {
             try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
         } catch {
             print("error: file not loaded")
         }
-        player.prepareToPlay()
-        player.enableRate = true
-        
-        self.togglePlay()
-        
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.play()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,16 +88,24 @@ class MakeMusicViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func play() {
+        player.play()
+        self.PauseOrPlayButton.setTitle("Pause", for: .normal)
+        self.isPlaying = true
+    }
+    
+    func pause() {
+        player.pause()
+        self.PauseOrPlayButton.setTitle("Play", for: .normal)
+        self.isPlaying = false
+    }
+    
     func togglePlay() {
         if (self.isPlaying) {
-            player.pause()
-            self.PauseOrPlayButton.setTitle("Play", for: .normal)
-            
+            self.pause()
         } else {
-            player.play()
-            self.PauseOrPlayButton.setTitle("Pause", for: .normal)
+            self.play()
         }
-        self.isPlaying = !self.isPlaying
     }
     
     /*

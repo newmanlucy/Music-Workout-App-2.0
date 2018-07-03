@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D75E67920D8B2460006A2B9 /* WorkoutSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75E67820D8B2460006A2B9 /* WorkoutSettingsViewController.swift */; };
-		AADBE4AC20E7FA43005C5D99 /* franz-liszt-liebestraum-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AADBE4AB20E7FA43005C5D99 /* franz-liszt-liebestraum-3.mp3 */; };
 		AAE76F2920CF549A0027FD21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F2820CF549A0027FD21 /* AppDelegate.swift */; };
 		AAE76F2B20CF549A0027FD21 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F2A20CF549A0027FD21 /* RootViewController.swift */; };
 		AAE76F2D20CF549A0027FD21 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F2C20CF549A0027FD21 /* DataViewController.swift */; };
@@ -26,6 +25,14 @@
 		AAE76F6E20CF59B40027FD21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F6D20CF59B40027FD21 /* HomeViewController.swift */; };
 		AAE76F7020CF5E880027FD21 /* ChooseMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F6F20CF5E880027FD21 /* ChooseMusicViewController.swift */; };
 		AAE76F7220CF5EE40027FD21 /* MakeMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE76F7120CF5EE40027FD21 /* MakeMusicViewController.swift */; };
+		AAEE8E7920EB019A00B03B29 /* Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E7820EB019A00B03B29 /* Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard.mp3 */; };
+		AAEE8E7C20EB084800B03B29 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E7B20EB084800B03B29 /* APIRequest.swift */; };
+		AAEE8E7E20EB085000B03B29 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E7D20EB085000B03B29 /* global.swift */; };
+		AAEE8E8320EB0C7600B03B29 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E7F20EB0C7600B03B29 /* Model.swift */; };
+		AAEE8E8420EB0C7600B03B29 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E8020EB0C7600B03B29 /* ViewModel.swift */; };
+		AAEE8E8520EB0C7600B03B29 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E8120EB0C7600B03B29 /* CustomCell.xib */; };
+		AAEE8E8620EB0C7600B03B29 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE8E8220EB0C7600B03B29 /* CustomCell.swift */; };
+		AAEE8E8820EB178D00B03B29 /* Feeling Happy Summer 2018 - The Best Of Vocal Deep House Music Chill Out #93 - Mix By Regard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AAEE8E8720EB178D00B03B29 /* Feeling Happy Summer 2018 - The Best Of Vocal Deep House Music Chill Out #93 - Mix By Regard.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		5D75E67820D8B2460006A2B9 /* WorkoutSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSettingsViewController.swift; sourceTree = "<group>"; };
-		AADBE4AB20E7FA43005C5D99 /* franz-liszt-liebestraum-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "franz-liszt-liebestraum-3.mp3"; path = "../../../../Downloads/franz-liszt-liebestraum-3.mp3"; sourceTree = "<group>"; };
 		AAE76F2520CF549A0027FD21 /* Music Workout App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Workout App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE76F2820CF549A0027FD21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE76F2A20CF549A0027FD21 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 		AAE76F6D20CF59B40027FD21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AAE76F6F20CF5E880027FD21 /* ChooseMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMusicViewController.swift; sourceTree = "<group>"; };
 		AAE76F7120CF5EE40027FD21 /* MakeMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeMusicViewController.swift; sourceTree = "<group>"; };
+		AAEE8E7820EB019A00B03B29 /* Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard.mp3"; sourceTree = "<group>"; };
+		AAEE8E7B20EB084800B03B29 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		AAEE8E7D20EB085000B03B29 /* global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
+		AAEE8E7F20EB0C7600B03B29 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AAEE8E8020EB0C7600B03B29 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		AAEE8E8120EB0C7600B03B29 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		AAEE8E8220EB0C7600B03B29 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		AAEE8E8720EB178D00B03B29 /* Feeling Happy Summer 2018 - The Best Of Vocal Deep House Music Chill Out #93 - Mix By Regard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Feeling Happy Summer 2018 - The Best Of Vocal Deep House Music Chill Out #93 - Mix By Regard.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +112,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AADBE4AA20E7F9F7005C5D99 /* Music Files */ = {
-			isa = PBXGroup;
-			children = (
-				AADBE4AB20E7FA43005C5D99 /* franz-liszt-liebestraum-3.mp3 */,
-			);
-			path = "Music Files";
-			sourceTree = "<group>";
-		};
 		AAE76F1C20CF549A0027FD21 = {
 			isa = PBXGroup;
 			children = (
@@ -129,14 +135,20 @@
 		AAE76F2720CF549A0027FD21 /* Music Workout App */ = {
 			isa = PBXGroup;
 			children = (
-				AADBE4AA20E7F9F7005C5D99 /* Music Files */,
+				AAEE8E7A20EB01C200B03B29 /* Music Files */,
 				AAE76F5C20CF56820027FD21 /* Music */,
 				AAE76F5B20CF565C0027FD21 /* Exercise */,
 				AAE76F5A20CF564E0027FD21 /* Login */,
 				AAE76F2820CF549A0027FD21 /* AppDelegate.swift */,
 				AAE76F2A20CF549A0027FD21 /* RootViewController.swift */,
+				AAEE8E7D20EB085000B03B29 /* global.swift */,
+				AAEE8E7F20EB0C7600B03B29 /* Model.swift */,
+				AAEE8E8020EB0C7600B03B29 /* ViewModel.swift */,
+				AAEE8E7B20EB084800B03B29 /* APIRequest.swift */,
 				AAE76F2C20CF549A0027FD21 /* DataViewController.swift */,
 				AAE76F2E20CF549A0027FD21 /* ModelController.swift */,
+				AAEE8E8220EB0C7600B03B29 /* CustomCell.swift */,
+				AAEE8E8120EB0C7600B03B29 /* CustomCell.xib */,
 				AAE76F3020CF549A0027FD21 /* Main.storyboard */,
 				AAE76F3320CF549A0027FD21 /* Assets.xcassets */,
 				AAE76F3520CF549A0027FD21 /* LaunchScreen.storyboard */,
@@ -191,6 +203,15 @@
 				AAE76F7120CF5EE40027FD21 /* MakeMusicViewController.swift */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		AAEE8E7A20EB01C200B03B29 /* Music Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAEE8E7820EB019A00B03B29 /* Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard.mp3 */,
+				AAEE8E8720EB178D00B03B29 /* Feeling Happy Summer 2018 - The Best Of Vocal Deep House Music Chill Out #93 - Mix By Regard.mp3 */,
+			);
+			path = "Music Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "uchicago-cs";
 				TargetAttributes = {
 					AAE76F2420CF549A0027FD21 = {
@@ -302,9 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE76F6420CF56E10027FD21 /* login.storyboard in Resources */,
-				AADBE4AC20E7FA43005C5D99 /* franz-liszt-liebestraum-3.mp3 in Resources */,
 				AAE76F5E20CF56A50027FD21 /* music.storyboard in Resources */,
+				AAEE8E8520EB0C7600B03B29 /* CustomCell.xib in Resources */,
 				AAE76F3720CF549A0027FD21 /* LaunchScreen.storyboard in Resources */,
+				AAEE8E7920EB019A00B03B29 /* Feeling Happy Summer - The Best Of Vocal Deep House Music Chill Out #109 - Mix By Regard.mp3 in Resources */,
+				AAEE8E8820EB178D00B03B29 /* Feeling Happy Summer 2018 - The Best Of Vocal Deep House Music Chill Out #93 - Mix By Regard.mp3 in Resources */,
 				AAE76F6220CF56D30027FD21 /* exercise.storyboard in Resources */,
 				AAE76F3420CF549A0027FD21 /* Assets.xcassets in Resources */,
 				AAE76F3220CF549A0027FD21 /* Main.storyboard in Resources */,
@@ -332,13 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEE8E7E20EB085000B03B29 /* global.swift in Sources */,
 				AAE76F7220CF5EE40027FD21 /* MakeMusicViewController.swift in Sources */,
 				AAE76F6C20CF59960027FD21 /* SignupViewController.swift in Sources */,
 				AAE76F2B20CF549A0027FD21 /* RootViewController.swift in Sources */,
 				5D75E67920D8B2460006A2B9 /* WorkoutSettingsViewController.swift in Sources */,
 				AAE76F2F20CF549A0027FD21 /* ModelController.swift in Sources */,
+				AAEE8E8420EB0C7600B03B29 /* ViewModel.swift in Sources */,
+				AAEE8E8620EB0C7600B03B29 /* CustomCell.swift in Sources */,
+				AAEE8E8320EB0C7600B03B29 /* Model.swift in Sources */,
 				AAE76F7020CF5E880027FD21 /* ChooseMusicViewController.swift in Sources */,
 				AAE76F2D20CF549A0027FD21 /* DataViewController.swift in Sources */,
+				AAEE8E7C20EB084800B03B29 /* APIRequest.swift in Sources */,
 				AAE76F6A20CF58F80027FD21 /* LoginViewController.swift in Sources */,
 				AAE76F6E20CF59B40027FD21 /* HomeViewController.swift in Sources */,
 				AAE76F2920CF549A0027FD21 /* AppDelegate.swift in Sources */,
@@ -410,6 +438,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -417,6 +446,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -467,6 +497,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -474,6 +505,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
