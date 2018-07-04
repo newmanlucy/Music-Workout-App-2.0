@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+var g = Global()
 
 class ViewModelItem {
     private var item: Model
@@ -99,7 +100,15 @@ extension ViewModel: UITableViewDelegate {
         }
         print("You selected cell #\(items[indexPath.row].data)!")
         
+        let data = items[indexPath.row].data
+        let name: String = data["fullname"]! as! String
+        print("Name: \(String(describing: name))")
+        
+        g.setSong(name: name)
+        g.play()
+        
         return indexPath
     }
+    
 }
 
