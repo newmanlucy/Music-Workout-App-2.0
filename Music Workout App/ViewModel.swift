@@ -104,8 +104,8 @@ extension ViewModel: UITableViewDelegate {
         let name: String = data["fullname"]! as! String
         print("Name: \(String(describing: name))")
         
-        g.setSong(name: name)
-        g.play()
+        global.setSong(name: name)
+        global.togglePlay()
         
         return indexPath
     }

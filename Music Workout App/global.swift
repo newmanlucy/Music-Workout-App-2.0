@@ -21,11 +21,12 @@ class Global: UIViewController {
     var rate: Float = 1.0
 
     func setRate(rate: Float) {
-        print("HERE", isPlaying)
+        print("HERE", self.isPlaying)
         self.rate = rate
         if (self.isPlaying) {
             self.player.rate = self.rate
             print(self.player.rate)
+            self.player.play()
         }
     }
     
@@ -36,6 +37,9 @@ class Global: UIViewController {
         } catch {
             print("error: file not loaded")
         }
+        self.player.prepareToPlay()
+        self.player.enableRate = true
+        self.player.rate = self.rate
     }
     
     func playSong(choice: String) {
@@ -45,10 +49,8 @@ class Global: UIViewController {
         } catch {
             print("error: file not loaded")
         }
-        self.player.prepareToPlay()
-        self.player.enableRate = true
-        self.player.rate = self.rate
-        self.play()
+
+        print(self.player.rate)
     }
 
     func play() {
