@@ -13,14 +13,10 @@ var global = Global()
 class MakeMusicViewController: UIViewController {
    
     @IBOutlet weak var tableView: UITableView!
-    
-    @IBOutlet weak var PauseOrPlayButton: UIButton!
-    
+
     @IBOutlet weak var RateLabel: UILabel!
     
-    @IBAction func PauseOrPlay(_ sender: Any) {
-      
-    }
+    
     
     @IBAction func ChangeRateSlider(_ sender: UISlider) {
         var rate: Float = 1.0
